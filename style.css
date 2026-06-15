@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    height: 100vh;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 40px);
+    margin: 20px;
+    height: 10vh;
+    z-index: 1000;
+    background-color: black;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+}
+
+nav span {
+    display: flex;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+nav span img {
+    height: 30px;
+    width: 30px;
+    margin-top: 8px;
+}
+
+nav .left {
+    margin-right: 0px;
+    border-radius: 40px 0px 0px 40px;
+    background-color: rgb(75, 74, 74);
+    height: 50px;
+
+}
+
+nav .right {
+    margin-left: 0px;
+    background-color: rgb(75, 74, 74);
+    border-radius: 0px 40px 40px 0px;
+    height: 50px;
+}
+
+nav input {
+    background-color: rgb(75, 74, 74);
+    width: 20vw;
+    height: 50px;
+    border: none;
+    /* margin: 10px 0; */
+    /* border-radius: 20px; */
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.line {
+    margin: 10px;
+    filter: invert(1);
+    height: 30px;
+    width: 20px;
+}
+
+.nav-list-left {
+    margin-left: 70px;
+}
+
+.nav-list-left li {
+    margin: 10px;
+}
+
+.nav-list-right li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list-right {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    /* margin-left: auto; */
+    list-style: none;
+    gap: 20px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+}
+
+.log-in {
+    color: black;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 750;
+}
+
+.box {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: rgb(18, 18, 18);
+    border-radius: 20px;
+    width: 30vw;
+    padding: 10px;
+    height: 85vh;
+    position: fixed;
+    left: 10px;
+    top: 15vh;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    font-size: 13px;
+    align-items: center;
+}
+
+.createbtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    background-color: rgb(58, 58, 58);
+    padding: 5px 16px;
+    width: fit-content;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.s1 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.sidebar .scroll {
+    max-height: 50%;
+    overflow-y: scroll;
+}
+
+.sidebar .playlist,
+.sidebar .podcast {
+    background-color: rgb(28, 28, 28);
+    margin: 20px 0px;
+    width: 95%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.playlist .p1,
+.podcast .p1 {
+    font-weight: bold;
+    margin: 7px;
+
+}
+
+.playlist .p2,
+.podcast .p2 {
+    font-size: 12px;
+    margin: 7px;
+
+}
+
+.sidebar .scroll button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 15px;
+    margin: 7px;
+    font-weight: bold;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    flex-direction: row;
+    font-size: 13px;
+}
+
+.footer a {
+    color: grey;
+    text-decoration: none;
+}
+
+.lang {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.lang img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.container {
+    flex: 1;
+    overflow-y: auto;
+    margin-left: 32vw;
+    margin-right: 10px;
+    margin-top: 15vh;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(22, 22, 22);
+    width: 60vw;
+    height: calc(100vh - 15vh - 20px);
+}
+
+.trending,
+.artists,
+.album,
+.radio,
+.charts {
+    margin: 20px;
+    width: 95%;
+    height: 300px;
+}
+
+.trending {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.trending .card {
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+}
+
+.logo {
+    border-radius: 7px;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+}
+
+.card1 {
+    background-image: url("trending_thumbnails/card1.jpg");
+}
+
+.card2 {
+    background-image: url("trending_thumbnails/card2.jpg");
+}
+
+.card3 {
+    background-image: url("trending_thumbnails/card3.jpg");
+}
+
+.card4 {
+    background-image: url("trending_thumbnails/card4.jpg");
+}
+
+.card5 {
+    background-image: url("trending_thumbnails/card5.jpg");
+}
+
+.card6 {
+    background-image: url("trending_thumbnails/card6.jpg");
+}
+
+.card7 {
+    background-position: center;
+    background-image: url("trending_thumbnails/card7.jpg");
+}
+
+.card8 {
+    background-image: url("trending_thumbnails/card8.jpg");
+}
+
+.card9 {
+    background-image: url("trending_thumbnails/card9.jpg");
+}
+
+.card10 {
+    background-image: url("trending_thumbnails/card10.jpg");
+}
+
+.card11 {
+    background-image: url("trending_thumbnails/card11.jpg");
+}
+
+.card12 {
+    background-image: url("trending_thumbnails/card12.jpg");
+}
+
+.card13 {
+    background-image: url("trending_thumbnails/card13.jpg");
+}
+
+.card14 {
+    background-image: url("trending_thumbnails/card14.jpg");
+}
+
+.card15 {
+    background-image: url("trending_thumbnails/card15.jpg");
+}
+
+.artists {
+    overflow-x: scroll;
+    display: flex;
+    scrollbar-width: none;
+}
+
+.artist {
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+}
+
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.artist1{
+    background-image: url("/artists/amanraj.jpg");
+}
+.artist2{
+    background-image: url("/artists/arijit.jpg");
+}
+.artist3{
+    background-image: url("/artists/dhanda.jpg");
+}
+.artist4{
+    background-image: url("/artists/honeySingh.jpg");
+}
+.artist5{
+    background-image: url("/artists/pritam.jpg");
+}
+.artist6{
+    background-image: url("/artists/rahman.jpg");
+}
+.artist7{
+    background-image: url("/artists/sachinJigar.jpg");
+}
+.artist8{
+    background-image: url("/artists/shreya.png");
+}
+.artist9{
+    background-image: url("/artists/sumit.jpg");
+    background-position: center;
+}
+.artist10{
+    background-image: url("/artists/udit.jpg");
+}
+
+.albums {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.albums .album {
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+}
+
+.album1{
+    background-image: url("/albums/album1.jpg");
+}
+.album2{
+    background-image: url("/albums/album2.jpg");
+}
+.album3{
+    background-image: url("/albums/album3.jpg");
+}
+.album4{
+    background-image: url("/albums/album4.jpg");
+}
+.album5{
+    background-image: url("/albums/album5.jpg");
+}
+.album6{
+    background-image: url("/albums/album6.jpg");
+}
+.album7{
+    background-image: url("/albums/album7.jpg");
+}
+.album8{
+    background-image: url("/albums/album8.jpg");
+}
+.album9{
+    background-image: url("/albums/album9.jpg");
+}
+
+.radios {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.radio img {
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+}
+
+.radio1{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en");
+}
+.radio2{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en");
+}
+.radio3{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en");
+}
+.radio4{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en");
+}
+.radio5{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en");
+}
+.radio6{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/e");
+}
+.radio7{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7uIbLdzzSEqnX0Pkrb56cR/en");
+}
+.radio8{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4PULA4EFzYTrxYvOVlwpiQ/en");
+}
+.radio9{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0GF4shudTAFv8ak9eWdd4Y/en");
+}
+.radio10{
+    background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4K6blSRoklNdpw4mzLxwfn/en");
+}
