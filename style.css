@@ -393,13 +393,13 @@ nav ul li {
     background-image: url("/artists/udit.jpg");
 }
 
-.albums {
+.albums , .charts{
     display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
 }
 
-.albums .album {
+.albums .album , .charts .chart{
     height: 300px;
     width: 200px;
     margin: 10px;
@@ -474,4 +474,17 @@ nav ul li {
 }
 .radio10{
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4K6blSRoklNdpw4mzLxwfn/en");
+}
+
+.chart1{
+    background-image: url("/charts/chart1.png");
+}
+.chart2{
+    background-image: url("/charts/chart2.png");
+}
+.chart3{
+    background-image: url("/charts/chart3.png");
+}
+.chart4{
+    background-image: url("/charts/chart4.png");
 }
