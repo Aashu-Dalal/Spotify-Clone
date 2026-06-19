@@ -488,3 +488,20 @@ nav ul li {
 .chart4{
     background-image: url("/charts/chart4.png");
 }
+
+footer{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    color: gray;
+}
+footer ul li{
+    list-style: none;
+    gap: 15px;
+}
+footer .titleName{
+    font-weight: bold
+}
