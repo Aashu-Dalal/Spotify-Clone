@@ -266,6 +266,7 @@ nav ul li {
     display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
+    overflow-y: hidden;
 }
 
 .trending .card {
@@ -355,6 +356,7 @@ nav ul li {
     overflow-x: scroll;
     display: flex;
     scrollbar-width: none;
+    overflow-y: hidden;
 }
 
 .artist {
@@ -406,6 +408,7 @@ nav ul li {
     display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
+    overflow-y: hidden;
 }
 
 .albums .album , .charts .chart{
