@@ -241,6 +241,7 @@ nav ul li {
 
 .container {
     flex: 1;
+    overflow-x: hidden;
     overflow-y: auto;
     margin-left: 32vw;
     margin-right: 10px;
@@ -250,6 +251,9 @@ nav ul li {
     background-color: rgb(22, 22, 22);
     width: 60vw;
     height: calc(100vh - 15vh - 20px);
+}
+.container h2{
+    margin: 8px 0;
 }
 
 .trending,
@@ -261,9 +265,11 @@ nav ul li {
     width: 95%;
     height: 300px;
 }
+.trending-container , .artist-container , .album-container , .chart-container , .radio-container{
+    display: flex;
+}
 
 .trending {
-    display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
     overflow-y: hidden;
@@ -354,7 +360,6 @@ nav ul li {
 
 .artists {
     overflow-x: scroll;
-    display: flex;
     scrollbar-width: none;
     overflow-y: hidden;
 }
@@ -405,7 +410,6 @@ nav ul li {
 }
 
 .albums , .charts{
-    display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
     overflow-y: hidden;
@@ -446,7 +450,6 @@ nav ul li {
 }
 
 .radios {
-    display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
 }
