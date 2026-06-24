@@ -90,6 +90,7 @@ nav ul li {
 
 .nav-list-left {
     margin-left: 70px;
+    display: flex;
 }
 
 .nav-list-left li {
