@@ -541,3 +541,7 @@ footer .titleName{
     border-radius: 50%;
     margin: 10px;
 }
+hr{
+    color: gray;
+    opacity: 0.2;
+}
