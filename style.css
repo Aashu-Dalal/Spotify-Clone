@@ -104,12 +104,12 @@ nav ul li {
 }
 
 .nav-list-right {
-    margin-top: 0px;
+    /* margin-top: 0px; */
     display: flex;
-    align-items: center;
+    align-items: space-around;
     /* margin-left: auto; */
-    list-style: none;
-    gap: 20px;
+    /* list-style: none; */
+    /* gap: 20px; */
 }
 
 .arrow {
