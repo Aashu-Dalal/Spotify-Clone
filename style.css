@@ -15,102 +15,102 @@ body {
 }
 
 nav {
-    display: flex;
     position: fixed;
     top: 0;
-    width: calc(100% - 40px);
-    align-items:center;
-    gap:16px;
-    height: 10vh;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 72px;
+    padding: 0 25px;
+
+    background: black;
     z-index: 1000;
-    background-color: black;
 }
 
+.nav-left, .nav-middle, .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    width: 470px;
+    height: 48px;
+    background: #2a2a2a;
+    border-radius: 999px;
+}
+.left{
+    padding-left: 14px;
+}
+.left img{
+    width: 24px;
+    height: 24px;
+}
+.right{
+    width:48px;
+    border-left:1px solid #6b6b6b;
+}
+.search-box input{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+.home-icon{
+    width: 48px;
+    height: 48px;
+
+    margin-left: 18px;
+    margin-right: 18px;
+
+    background: #242424;
+    border-radius: 50%;
+    padding: 10px;
+}
+.nav-list-left{
+    display: flex;
+    gap: 36px;
+    list-style: none;
+}
+.nav-list-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+.nav-list-left li{
+    color:#b3b3b3;
+    font-weight:700;
+    font-size:16px;
+}
+
+.nav-list-left li:hover{
+    color:white;
+}
+.installing{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.line{
+    width: 1px;
+    height: 25px;
+    background: white;
+    margin-right: 25px;
+}
 nav img {
     width: 40px;
     height: 40px;
-    margin: 0px 10px;
 }
 
-nav span {
-    width: 480px;
-    display: flex;
-    margin-left: 20px;
-    text-align: center;
-    justify-content: center;
-}
-
-nav span img {
-    height: 30px;
-    width: 30px;
-    margin-top: 8px;
-}
-.left,
-.right{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:50px;
-    height:50px;
-}
-nav .left {
-    margin-right: 0px;
-    border-radius: 40px 0px 0px 40px;
-    background-color: rgb(75, 74, 74);
-    height: 50px;
-
-}
-
-nav .right {
-    margin-left: 0px;
-    background-color: rgb(75, 74, 74);
-    border-radius: 0px 40px 40px 0px;
-    height: 50px;
-}
-
-nav input {
-    background-color: rgb(75, 74, 74);
-    height: 50px;
-    border: none;
-    /* margin: 10px 0; */
-    /* border-radius: 20px; */
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-}
-
-.line {
-    margin: 10px;
-    filter: invert(1);
-    height: 30px;
-    width: 20px;
-}
-
-.nav-list-left {
-    margin-left: 70px;
-    display: flex;
-}
-
-.nav-list-left li {
-    margin: 10px;
-}
-
-.nav-list-right li {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.nav-list-right {
-    /* margin-top: 0px; */
-    display: flex;
-    align-items: space-around;
-    /* margin-left: auto; */
-    /* list-style: none; */
-    /* gap: 20px; */
-}
 
 .arrow {
     display: flex;
@@ -118,18 +118,19 @@ nav ul li {
     align-items: center;
     border: 1.5px solid white;
     border-radius: 50px;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
 }
 
 .log-in {
     color: black;
     background-color: white;
-    width: 100px;
-    height: 50px;
+    width: 108px;
+    height: 48px;
     border: none;
-    border-radius: 50px;
-    font-weight: 750;
+    border-radius: 999px;
+    font-weight: 700;
 }
 
 .box {
