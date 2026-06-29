@@ -551,3 +551,7 @@ hr{
     color: gray;
     opacity: 0.2;
 }
+
+.logo:hover{
+    background: red;
+}
