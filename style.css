@@ -554,4 +554,5 @@ hr{
 
 .logo:hover{
     background: red;
+    cursor: pointer;
 }
