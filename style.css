@@ -13,12 +13,14 @@ body {
     height: 100vh;
     background-color: black;
 }
-.browse{
+
+.browse {
     filter: invert(1);
     width: 30px;
     height: 30px;
     margin: 5px;
 }
+
 nav {
     position: fixed;
     top: 0;
@@ -36,12 +38,14 @@ nav {
     z-index: 1000;
 }
 
-.nav-left, .nav-middle, .nav-right{
+.nav-left,
+.nav-middle,
+.nav-right {
     display: flex;
     align-items: center;
 }
 
-.search-box{
+.search-box {
     display: flex;
     align-items: center;
     width: 450px;
@@ -49,18 +53,22 @@ nav {
     background: #2a2a2a;
     border-radius: 999px;
 }
-.left{
+
+.left {
     padding-left: 14px;
 }
-.left img{
+
+.left img {
     width: 24px;
     height: 24px;
 }
-.right{
-    width:48px;
-    border-left:1px solid #6b6b6b;
+
+.right {
+    width: 48px;
+    border-left: 1px solid #6b6b6b;
 }
-.search-box input{
+
+.search-box input {
     flex: 1;
     height: 100%;
     border: none;
@@ -69,7 +77,8 @@ nav {
     color: white;
     font-size: 16px;
 }
-.home-icon{
+
+.home-icon {
     width: 48px;
     height: 48px;
 
@@ -80,37 +89,43 @@ nav {
     border-radius: 50%;
     padding: 10px;
 }
-.nav-list-left{
+
+.nav-list-left {
     display: flex;
     gap: 36px;
     list-style: none;
 }
-.nav-list-right{
+
+.nav-list-right {
     display: flex;
     align-items: center;
     gap: 25px;
     list-style: none;
 }
-.nav-list-left li{
-    color:#b3b3b3;
-    font-weight:700;
-    font-size:16px;
+
+.nav-list-left li {
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 16px;
 }
 
-.nav-list-left li:hover{
-    color:white;
+.nav-list-left li:hover {
+    color: white;
 }
-.installing{
-    display:flex;
-    align-items:center;
-    gap:8px;
+
+.installing {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
-.line{
+
+.line {
     width: 1px;
     height: 25px;
     background: white;
     margin-right: 25px;
 }
+
 nav img {
     width: 40px;
     height: 40px;
@@ -267,7 +282,8 @@ nav img {
     width: 60vw;
     height: calc(100vh - 15vh - 20px);
 }
-.container h2{
+
+.container h2 {
     margin: 8px 0;
 }
 
@@ -280,7 +296,12 @@ nav img {
     width: 95%;
     height: 300px;
 }
-.trending-container , .artist-container , .album-container , .chart-container , .radio-container{
+
+.trending-container,
+.artist-container,
+.album-container,
+.chart-container,
+.radio-container {
     display: flex;
 }
 
@@ -296,15 +317,17 @@ nav img {
     margin: 10px;
 }
 
-.song{
+.song {
     color: white;
     font-size: 1rem;
     margin: 6px 0;
 }
-.singer{
+
+.singer {
     color: rgb(168, 168, 168);
     font-size: 0.8rem;
 }
+
 .logo {
     border-radius: 7px;
     height: 150px;
@@ -385,82 +408,101 @@ nav img {
     margin: 10px;
 }
 
-.photo{
+.photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background-size: cover;
 }
 
-.artist1{
+.artist1 {
     background-image: url("/artists/amanraj.jpg");
 }
-.artist2{
+
+.artist2 {
     background-image: url("/artists/arijit.jpg");
 }
-.artist3{
+
+.artist3 {
     background-image: url("/artists/dhanda.jpg");
 }
-.artist4{
+
+.artist4 {
     background-image: url("/artists/honeySingh.jpg");
 }
-.artist5{
+
+.artist5 {
     background-image: url("/artists/pritam.jpg");
 }
-.artist6{
+
+.artist6 {
     background-image: url("/artists/rahman.jpg");
 }
-.artist7{
+
+.artist7 {
     background-image: url("/artists/sachinJigar.jpg");
 }
-.artist8{
+
+.artist8 {
     background-image: url("/artists/shreya.png");
 }
-.artist9{
+
+.artist9 {
     background-image: url("/artists/sumit.jpg");
     background-position: center;
 }
-.artist10{
+
+.artist10 {
     background-image: url("/artists/udit.jpg");
 }
 
-.albums , .charts{
+.albums,
+.charts {
     overflow-x: scroll;
     scrollbar-width: none;
     overflow-y: hidden;
 }
 
-.albums .album , .charts .chart{
+.albums .album,
+.charts .chart {
     height: 300px;
     width: 200px;
     margin: 10px;
 }
 
-.album1{
+.album1 {
     background-image: url("/albums/album1.jpg");
 }
-.album2{
+
+.album2 {
     background-image: url("/albums/album2.jpg");
 }
-.album3{
+
+.album3 {
     background-image: url("/albums/album3.jpg");
 }
-.album4{
+
+.album4 {
     background-image: url("/albums/album4.jpg");
 }
-.album5{
+
+.album5 {
     background-image: url("/albums/album5.jpg");
 }
-.album6{
+
+.album6 {
     background-image: url("/albums/album6.jpg");
 }
-.album7{
+
+.album7 {
     background-image: url("/albums/album7.jpg");
 }
-.album8{
+
+.album8 {
     background-image: url("/albums/album8.jpg");
 }
-.album9{
+
+.album9 {
     background-image: url("/albums/album9.jpg");
 }
 
@@ -475,70 +517,87 @@ nav img {
     margin: 10px;
 }
 
-.radio1{
+.radio1 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en");
 }
-.radio2{
+
+.radio2 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en");
 }
-.radio3{
+
+.radio3 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en");
 }
-.radio4{
+
+.radio4 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en");
 }
-.radio5{
+
+.radio5 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en");
 }
-.radio6{
+
+.radio6 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/e");
 }
-.radio7{
+
+.radio7 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7uIbLdzzSEqnX0Pkrb56cR/en");
 }
-.radio8{
+
+.radio8 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4PULA4EFzYTrxYvOVlwpiQ/en");
 }
-.radio9{
+
+.radio9 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0GF4shudTAFv8ak9eWdd4Y/en");
 }
-.radio10{
+
+.radio10 {
     background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4K6blSRoklNdpw4mzLxwfn/en");
 }
 
-.chart1{
+.chart1 {
     background-image: url("/charts/chart1.png");
 }
-.chart2{
+
+.chart2 {
     background-image: url("/charts/chart2.png");
 }
-.chart3{
+
+.chart3 {
     background-image: url("/charts/chart3.png");
 }
-.chart4{
+
+.chart4 {
     background-image: url("/charts/chart4.png");
 }
 
-footer{
+footer {
     margin: 20px;
     display: flex;
     justify-content: space-between;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: gray;
 }
-footer ul li{
+
+footer ul li {
     list-style: none;
     margin: 10px;
 }
-footer .titleName{
+
+footer .titleName {
     font-weight: bold
 }
-.appsLogo{
+
+.appsLogo {
     display: flex;
 }
-.appsLogo img{
+
+.appsLogo img {
     height: 40px;
     width: 40px;
     padding: 9px;
@@ -547,12 +606,41 @@ footer .titleName{
     border-radius: 50%;
     margin: 10px;
 }
-hr{
+
+hr {
     color: gray;
     opacity: 0.2;
 }
 
-.logo:hover{
-    background: red;
+.play-btn {
+    opacity: 0;
+    position: absolute;
+    background: #1ed760;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 10px;
+    font-size: 23px;
+    color: black;
+}
+
+.logo {
+    position: relative;
+
+}
+
+.logo:hover .play-btn {
+    opacity: 1;
     cursor: pointer;
+}
+.play-btn:hover {
+    right: 8px;
+    bottom: 8px;
+    background: #3cd170;
+    width: 52px;
+    height: 52px;
 }
