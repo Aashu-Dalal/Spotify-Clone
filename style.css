@@ -315,6 +315,7 @@ nav img {
     height: 300px;
     width: 200px;
     margin: 10px;
+    padding: 10px;
 }
 
 .song {
@@ -406,6 +407,7 @@ nav img {
     height: 300px;
     width: 250px;
     margin: 10px;
+    padding: 10px;
 }
 
 .photo {
@@ -465,6 +467,7 @@ nav img {
 
 .albums .album,
 .charts .chart {
+    padding: 10px;
     height: 300px;
     width: 200px;
     margin: 10px;
@@ -640,7 +643,13 @@ hr {
 .play-btn:hover {
     right: 8px;
     bottom: 8px;
-    background: #3cd170;
+    background: #4de482;
     width: 52px;
     height: 52px;
+}
+
+.card:hover , .artist:hover , .album:hover , .chart:hover , .radio:hover {
+    background-color: rgb(38, 38, 38);
+    cursor: pointer;
+    border-radius: 10px;
 }
