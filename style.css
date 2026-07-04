@@ -303,21 +303,26 @@ nav img {
 .chart-container,
 .radio-container {
     display: flex;
+    gap:16px;
+    overflow-x:auto;
+    scrollbar-width:none;
 }
 
 .trending {
-    overflow-x: scroll;
+    overflow-x: hidden;
     scrollbar-width: none;
     overflow-y: hidden;
 }
 
 .trending .card {
-    height: 300px;
+    height: auto;
     width: 200px;
     margin: 10px;
     padding: 10px;
 }
-
+.title{
+    width: 100%;
+}
 .song {
     color: white;
     font-size: 1rem;
@@ -327,13 +332,20 @@ nav img {
 .singer {
     color: rgb(168, 168, 168);
     font-size: 0.8rem;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
-.logo {
-    border-radius: 7px;
-    height: 150px;
-    width: 150px;
-    background-size: cover;
+.logo{
+    width:150px;
+    height:150px;
+    border-radius:8px;
+    background-size:cover;
+    background-position:center;
+    position:relative;
 }
 
 .card1 {
@@ -636,7 +648,7 @@ hr {
 
 }
 
-.logo:hover .play-btn {
+.card:hover .play-btn {
     opacity: 1;
     cursor: pointer;
 }
