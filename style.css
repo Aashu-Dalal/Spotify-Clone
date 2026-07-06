@@ -650,7 +650,7 @@ hr {
 
 }
 
-.card:hover .play-btn {
+.logo:hover .play-btn {
     opacity: 1;
     cursor: pointer;
 }
