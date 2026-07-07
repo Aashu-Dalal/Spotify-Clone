@@ -1,0 +1,1 @@
+let play = document.getElementsByClassName("play-btn");
