@@ -1,1 +1,7 @@
-let play = document.getElementsByClassName("play-btn");
+const plays = document.querySelectorAll(".play-btn");
+
+plays.forEach(play => {
+    play.addEventListener("click", () => {
+        
+    });
+});
