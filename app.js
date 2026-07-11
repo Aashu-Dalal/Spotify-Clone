@@ -5,3 +5,10 @@ plays.forEach(play => {
         
     });
 });
+
+let song1 = document.getElementById("song1");
+
+playBtn.addEventListener("click", () => {
+    let audio = new Audio("audio/hanumanChalisa.mp3");
+    audio.play();
+});
